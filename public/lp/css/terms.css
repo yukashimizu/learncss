@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Yu Mincho', 'YuMincho', serif;
+}
+
+header {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.logo {
+  display: block;
+  padding: 2% 0;
+  width: 150px;
+}
+
+.termsContainer {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.term {
+  margin: 5% 0;
+}
+
+.textRight {
+  text-align: right;
+}

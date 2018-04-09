@@ -1,0 +1,146 @@
+.buttonsList {
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+.buttonCircle {
+	display: inline-block;
+	font-size: 2em;
+	margin: 0 .5em;
+}
+
+/*稲妻が回転するボタン*/
+
+.buttonRotate {
+	border: 1px solid #ffe555;
+	border-radius: 50%;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .3);
+	display: inline-block;
+	height: 2em;
+	text-align: center;
+	transition: .3s;
+	width: 2em;
+}
+
+.rotate {
+	color: #ffe555;
+	transition: .3s;
+	vertical-align: bottom;
+}
+
+.buttonRotate:hover {
+	background: #ffe500;
+	transition: .3s;
+}
+
+.buttonRotate:hover .rotate {
+	color: #fff;
+	transform: rotate(45deg);
+	transition: .3s;
+}
+
+/*全体的に輝くボタン*/
+
+.buttonShine {
+	background: #ff3300;
+	border: 1px solid #ff3300;
+	border-radius: 50%;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .3);
+	display: inline-block;
+	height: 2em;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	transition: .3s;
+	width: 2em;
+}
+
+.shine {
+	color: #fff;
+	transition: .3s;
+	vertical-align: bottom;
+	z-index: 20;
+}
+
+.shine:after {
+	background: #fff;
+	content: '';
+	height: 2.5em;
+	left: -1.5em;
+	opacity: .2;
+	position: absolute;
+	top: -.2em;
+	transform: rotate(30deg);
+	transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 1em;
+}
+
+.buttonShine:hover .shine:after {
+	left: 120%;
+	transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*縦に回転するボタン*/
+
+.buttonXrotate {
+	background: #00d9ea;
+	border: 1px solid #00d9ea;
+	border-radius: 50%;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .3);
+	display: inline-block;
+	height: 2em;
+	text-align: center;
+	width: 2em;
+}
+
+.Xrotate {
+	color: #fff;
+	vertical-align: bottom;
+	transition: .3s;
+}
+
+.buttonXrotate:hover .Xrotate {
+	transform: rotateX(360deg);
+	transition: .3s;
+}
+
+/*二重丸になるボタン*/
+
+.buttonDouble {
+	background: #66d620;
+	border-radius: 50%;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .3);
+	display: inline-block;
+	height: 2em;
+	position: relative;
+	text-align: center;
+	transition: .3s;
+	width: 2em;
+}
+
+.buttonDouble:after {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	height: 1.8em;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	transition: .3s;
+	width: 1.8em;
+}
+
+.double {
+	color: #fff;
+	vertical-align: bottom;
+}
+
+.buttonDouble:hover .buttonDouble:after {
+	opacity: 1;
+}
+
+
+
