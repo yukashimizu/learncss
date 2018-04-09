@@ -1,2 +1,2 @@
-# learncss
-learn css
+# mydev
+個人的な制作物。適当。
