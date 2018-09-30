@@ -31,6 +31,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     &-item {
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
       margin: 15px;
       position: relative;
       transition: .3s;
@@ -53,6 +54,16 @@ ul {
       }
       &-image {
         width: 100%;
+      }
+      &-textcontainer {
+        margin: 5%;
+      }
+      &-title {
+        font-size: 1.5rem;
+      }
+      &-text {
+        color: #555;
+        margin-top: 1rem;
       }
       &:hover {
         opacity: .8;
