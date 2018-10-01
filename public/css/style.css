@@ -242,6 +242,9 @@ ul {
   list-style: none;
   padding: 0; }
 
+p {
+  margin-bottom: 0; }
+
 /* link card design */
 .streched-link:after {
   content: "";
@@ -253,6 +256,19 @@ ul {
   left: 0;
   pointer-events: auto;
   z-index: 1; }
+
+/* header */
+.header {
+  width: 100vw;
+  background: #333; }
+  .header-inner {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80%; }
+    .header-inner-text {
+      color: #CEF6F5;
+      font-size: 2rem;
+      font-weight: bold; }
 
 /* contents */
 .main {
@@ -292,5 +308,17 @@ ul {
       .main-list-item:hover {
         opacity: .8;
         transition: .3s; }
+
+/* footer */
+.footer {
+  background: #333; }
+  .footer-inner {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80%; }
+    .footer-inner-text {
+      color: #CEF6F5;
+      font-size: .7rem;
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

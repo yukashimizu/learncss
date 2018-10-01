@@ -7,6 +7,10 @@ ul {
   padding: 0;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 /* link card design */
 .streched-link {
   &:after {
@@ -19,6 +23,23 @@ ul {
     left: 0;
     pointer-events: auto;
     z-index: 1;
+  }
+}
+
+/* header */
+
+.header {
+  width: 100vw;
+  background: $black;
+  &-inner {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80%;
+    &-text {
+      color: #CEF6F5;
+      font-size: 2rem;
+      font-weight: bold;
+    }
   }
 }
 
@@ -69,6 +90,22 @@ ul {
         opacity: .8;
         transition: .3s;
       }
+    }
+  }
+}
+
+/* footer */
+
+.footer {
+  background: $black;
+  &-inner {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 80%;
+    &-text {
+      color: #CEF6F5;
+      font-size: .7rem;
+      text-align: center;
     }
   }
 }
